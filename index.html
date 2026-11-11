@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>MurciaGram · El Pinterest de la Región de Murcia</title>
+  <meta name="description" content="MurciaGram es la galería de inspiración visual de la Región de Murcia: descubre el patrimonio, la costa, la naturaleza y la gastronomía de Lorca, Cartagena, Caravaca, Murcia, Águilas, Mazarrón, Cieza y Jumilla.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="MurciaGram · Consejería de Turismo de la Región de Murcia">
+  <meta name="theme-color" content="#0f5f5c">
+  <link rel="canonical" href="https://TU-USUARIO.github.io/murciagram/">
+
+  <!-- Open Graph básico -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="MurciaGram">
+  <meta property="og:title" content="MurciaGram · El Pinterest de la Región de Murcia">
+  <meta property="og:description" content="Patrimonio, costa, naturaleza y gastronomía de los municipios murcianos en una galería visual para descubrir y guardar.">
+  <meta property="og:url" content="https://TU-USUARIO.github.io/murciagram/">
+  <meta property="og:image" content="https://TU-USUARIO.github.io/murciagram/assets/img/lorca-desktop.jpg">
+  <meta property="og:image:width" content="1000">
+  <meta property="og:image:height" content="750">
+  <meta property="og:image:alt" content="Panorámica del castillo de Lorca y sus barrios altos">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MurciaGram · El Pinterest de la Región de Murcia">
+  <meta name="twitter:description" content="Una galería visual para descubrir y guardar lo mejor de la Región de Murcia.">
+  <meta name="twitter:image" content="https://TU-USUARIO.github.io/murciagram/assets/img/lorca-desktop.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "MurciaGram",
+    "url": "https://TU-USUARIO.github.io/murciagram/",
+    "description": "Galería de inspiración visual del patrimonio histórico, natural y gastronómico de la Región de Murcia.",
+    "inLanguage": "es-ES",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Consejería de Turismo de la Región de Murcia"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Sprite de iconos: se reutiliza en cabecera, tarjetas y pie -->
+  <svg class="visually-hidden" aria-hidden="true" focusable="false">
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="MurciaGram, volver al inicio">
+      <span class="brand__mark" aria-hidden="true"><svg><use href="#i-pin"/></svg></span>
+      <h1 class="brand__text">Murcia<span>Gram</span></h1>
+    </a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#municipios">Municipios</a></li>
+        <li><a href="#experiencias">Experiencias</a></li>
+        <li><a class="nav-cta" href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside class="sidebar" id="municipios" aria-labelledby="sidebar-title">
+    <h2 id="sidebar-title">Municipios</h2>
+    <p>Ocho paradas, ocho formas de enamorarse de la Región de Murcia.</p>
+    <ul>
+      <li><a href="#lorca">Lorca</a></li>
+      <li><a href="#cartagena">Cartagena</a></li>
+      <li><a href="#caravaca">Caravaca de la Cruz</a></li>
+      <li><a href="#murcia">Murcia</a></li>
+      <li><a href="#aguilas">Águilas</a></li>
+      <li><a href="#mazarron">Mazarrón</a></li>
+      <li><a href="#cieza">Cieza</a></li>
+      <li><a href="#jumilla">Jumilla</a></li>
+    </ul>
+    <p class="sidebar__note"><svg aria-hidden="true"><use href="#i-sun"/></svg> Toca una tarjeta para descubrir su historia y guardar tu próxima parada.</p>
+  </aside>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Inspiración · Región de Murcia</p>
+      <h2 id="hero-title">El Pinterest de la <em>Región de Murcia</em></h2>
+      <p class="hero__lead">Patrimonio barroco, calas turquesa, huerta infinita y vinos de interior. Una galería curada para descubrir los ocho municipios que resumen el carácter murciano.</p>
+      <menu class="hero__actions">
+        <li><a class="button button--primary" href="#galeria">Explorar la galería <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li><a class="button button--ghost" href="#municipios">Ver municipios</a></li>
+      </menu>
+      <ul class="hero__stats" aria-label="Datos de la Región de Murcia">
+        <li><strong>8</strong><span>destinos</span></li>
+        <li><strong>+3.000</strong><span>años de historia</span></li>
+        <li><strong>300</strong><span>días de sol</span></li>
+      </ul>
+      <figure class="hero__visual">
+        <picture>
+          <source media="(width <= 600px)" srcset="assets/img/lorca-mobile.jpg">
+          <img src="assets/img/lorca-desktop.jpg" width="1000" height="750" alt="Panorámica del castillo de Lorca y los barrios altos de la ciudad" fetchpriority="high" decoding="async">
+        </picture>
+        <figcaption>Lorca · Fortaleza del Sol</figcaption>
+      </figure>
+    </section>
+
+    <section class="gallery-section" id="experiencias" aria-labelledby="gallery-title">
+      <header class="section-head">
+        <p class="eyebrow">Galería curada</p>
+        <h2 class="page-title" id="gallery-title">Descubre la Región de Murcia</h2>
+        <p>Del barroco de Lorca a la floración de Cieza: guarda tus planes favoritos y vuelve a ellos cuando quieras.</p>
+      </header>
+
+      <section class="gallery" id="galeria" aria-label="Galería de municipios">
+        <article class="card" id="lorca" data-municipio="lorca" aria-labelledby="lorca-title">
+          <figure class="card__media" tabindex="0" aria-label="Lorca: ciudad barroca y castillo-fortaleza">
+            <picture>
+              <source media="(width <= 600px)" srcset="assets/img/lorca-mobile.jpg">
+              <img src="assets/img/lorca-desktop.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Panorámica del castillo de Lorca y los barrios altos de la ciudad">
+            </picture>
+            <span class="card__tag">Cultura</span>
+            <figcaption class="overlay">
+              <p class="overlay__eyebrow">Cultura · Interior</p>
+              <p class="overlay__text">Ciudad barroca coronada por la Fortaleza del Sol, con una Semana Santa de Interés Turístico Internacional.</p>
+              <menu class="overlay__actions">
+                <li><button class="icon-btn like" type="button" aria-pressed="false" aria-label="Marcar Lorca como favorito" data-like="lorca"><svg aria-hidden="true"><use href="#i-heart"/></svg></button></li>
+                <li><a class="icon-btn" href="https://www.lorca.es" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Lorca (se abre en una pestaña nueva)"><svg aria-hidden="true"><use href="#i-link"/></svg></a></li>
+              </menu>
+            </figcaption>
+          </figure>
+          <header class="card__head">
+            <p class="card__kicker">Cultura · Interior</p>
+            <h3 id="lorca-title">Lorca</h3>
+            <p class="card__desc">Barroco, castillo y una Semana Santa que se vive con devoción y arte en cada calle.</p>
+          </header>
+          <footer class="card__body">
+            <p class="card__meta"><svg aria-hidden="true"><use href="#i-pin"/></svg> Región de Murcia · 3 min de lectura</p>
+            <input class="toggle visually-hidden" type="checkbox" id="guardar-lorca">
+            <label class="btn" for="guardar-lorca">
+              <svg aria-hidden="true"><use href="#i-bookmark"/></svg>
+              <span class="btn__off">Guardar en mi ruta</span>
+              <span class="btn__on">✓ Guardado</span>
+            </label>
+          </footer>
+        </article>
+
+        <article class="card" id="cartagena" data-municipio="cartagena" aria-labelledby="cartagena-title">
+          <figure class="card__media" tabindex="0" aria-label="Cartagena: puerto milenario y ciudad romana">
+            <picture>
+              <source media="(width <= 600px)" srcset="assets/img/cartagena-mobile.jpg">
+              <img src="assets/img/cartagena-desktop.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Teatro romano de Cartagena, uno de los grandes tesoros de la ciudad">
+            </picture>
+            <span class="card__tag">Cultura</span>
+            <figcaption class="overlay">
+              <p class="overlay__eyebrow">Cultura · Costa</p>
+              <p class="overlay__text">Puerto milenario con teatro romano, museo naval y una bahía que ha visto pasar fenicios, romanos y cartagineses.</p>
+              <menu class="overlay__actions">
+                <li><button class="icon-btn like" type="button" aria-pressed="false" aria-label="Marcar Cartagena como favorito" data-like="cartagena"><svg aria-hidden="true"><use href="#i-heart"/></svg></button></li>
+                <li><a class="icon-btn" href="https://www.cartagena.es" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Cartagena (se abre en una pestaña nueva)"><svg aria-hidden="true"><use href="#i-link"/></svg></a></li>
+              </menu>
+            </figcaption>
+          </figure>
+          <header class="card__head">
+            <p class="card__kicker">Cultura · Costa</p>
+            <h3 id="cartagena-title">Cartagena</h3>
+            <p class="card__desc">Un puerto con 3.000 años de historia, teatro romano y una bahía que enamora al atardecer.</p>
+          </header>
+          <footer class="card__body">
+            <p class="card__meta"><svg aria-hidden="true"><use href="#i-pin"/></svg> Región de Murcia · 4 min de lectura</p>
+            <input class="toggle visually-hidden" type="checkbox" id="guardar-cartagena">
+            <label class="btn" for="guardar-cartagena">
+              <svg aria-hidden="true"><use href="#i-bookmark"/></svg>
+              <span class="btn__off">Guardar en mi ruta</span>
+              <span class="btn__on">✓ Guardado</span>
+            </label>
+          </footer>
+        </article>
+
+        <article class="card" id="caravaca" data-municipio="caravaca" aria-labelledby="caravaca-title">
+          <figure class="card__media" tabindex="0" aria-label="Caravaca de la Cruz: ciudad santa y castillo santuario">
+            <picture>
+              <source media="(width <= 600px)" srcset="assets/img/caravaca-mobile.jpg">
+              <img src="assets/img/caravaca-desktop.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Vista aérea de Caravaca de la Cruz con sus tejados y la sierra">
+            </picture>
+            <span class="card__tag">Cultura</span>
+            <figcaption class="overlay">
+              <p class="overlay__eyebrow">Cultura · Noroeste</p>
+              <p class="overlay__text">Ciudad Santa del Año Jubilar, con su Real Alcázar-Santuario de la Vera Cruz y el Festival de los Caballos del Vino.</p>
+              <menu class="overlay__actions">
+                <li><button class="icon-btn like" type="button" aria-pressed="false" aria-label="Marcar Caravaca de la Cruz como favorito" data-like="caravaca"><svg aria-hidden="true"><use href="#i-heart"/></svg></button></li>
+                <li><a class="icon-btn" href="https://www.caravaca.org" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Caravaca de la Cruz (se abre en una pestaña nueva)"><svg aria-hidden="true"><use href="#i-link"/></svg></a></li>
+              </menu>
+            </figcaption>
+          </figure>
+          <header class="card__head">
+            <p class="card__kicker">Cultura · Noroeste</p>
+            <h3 id="caravaca-title">Caravaca de la Cruz</h3>
+            <p class="card__desc">La Ciudad Santa del Año Jubilar, con su castillo-santuario y los Caballos del Vino.</p>
+          </header>
+          <footer class="card__body">
+            <p class="card__meta"><svg aria-hidden="true"><use href="#i-pin"/></svg> Región de Murcia · 3 min de lectura</p>
+            <input class="toggle visually-hidden" type="checkbox" id="guardar-caravaca">
+            <label class="btn" for="guardar-caravaca">
+              <svg aria-hidden="true"><use href="#i-bookmark"/></svg>
+              <span class="btn__off">Guardar en mi ruta</span>
+              <span class="btn__on">✓ Guardado</span>
+            </label>
+          </footer>
+        </article>
+
+        <article class="card" id="murcia" data-municipio="murcia" aria-labelledby="murcia-title">
+          <figure class="card__media" tabindex="0" aria-label="Murcia: capital de la huerta y la Catedral">
+            <picture>
+              <source media="(width <= 600px)" srcset="assets/img/murcia-mobile.jpg">
+              <img src="assets/img/murcia-desktop.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Procesión de Semana Santa en el centro histórico de Murcia">
+            </picture>
+            <span class="card__tag">Gastronomía</span>
+            <figcaption class="overlay">
+              <p class="overlay__eyebrow">Gastronomía · Huerta</p>
+              <p class="overlay__text">Capital de la Región, con una catedral de fachada barroca única y la huerta más famosa del sureste, despensa de verduras y frutas.</p>
+              <menu class="overlay__actions">
+                <li><button class="icon-btn like" type="button" aria-pressed="false" aria-label="Marcar Murcia como favorito" data-like="murcia"><svg aria-hidden="true"><use href="#i-heart"/></svg></button></li>
+                <li><a class="icon-btn" href="https://www.murcia.es" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Murcia (se abre en una pestaña nueva)"><svg aria-hidden="true"><use href="#i-link"/></svg></a></li>
+              </menu>
+            </figcaption>
+          </figure>
+          <header class="card__head">
+            <p class="card__kicker">Gastronomía · Huerta</p>
+            <h3 id="murcia-title">Murcia</h3>
+            <p class="card__desc">La huerta, la Catedral y una forma de comer que convierte cada visita en un ritual.</p>
+          </header>
+          <footer class="card__body">
+            <p class="card__meta"><svg aria-hidden="true"><use href="#i-pin"/></svg> Región de Murcia · 4 min de lectura</p>
+            <input class="toggle visually-hidden" type="checkbox" id="guardar-murcia">
+            <label class="btn" for="guardar-murcia">
+              <svg aria-hidden="true"><use href="#i-bookmark"/></svg>
+              <span class="btn__off">Guardar en mi ruta</span>
+              <span class="btn__on">✓ Guardado</span>
+            </label>
+          </footer>
+        </article>
+
+        <article class="card" id="aguilas" data-municipio="aguilas" aria-labelledby="aguilas-title">
+          <figure class="card__media" tabindex="0" aria-label="Águilas: calas turquesa y pueblo marinero">
+            <picture>
+              <source media="(width <= 600px)" srcset="assets/img/aguilas-mobile.jpg">
+              <img src="assets/img/aguilas-desktop.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Vista de la costa de Águilas bajo una gran tormenta">
+            </picture>
+            <span class="card__tag">Costa</span>
+            <figcaption class="overlay">
+              <p class="overlay__eyebrow">Costa · Mediterráneo</p>
+              <p class="overlay__text">Pueblo marinero de calas de aguas turquesa, con el castillo de San Juan y uno de los carnavales más vistosos de España.</p>
+              <menu class="overlay__actions">
+                <li><button class="icon-btn like" type="button" aria-pressed="false" aria-label="Marcar Águilas como favorito" data-like="aguilas"><svg aria-hidden="true"><use href="#i-heart"/></svg></button></li>
+                <li><a class="icon-btn" href="https://www.aguilas.es" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Águilas (se abre en una pestaña nueva)"><svg aria-hidden="true"><use href="#i-link"/></svg></a></li>
+              </menu>
+            </figcaption>
+          </figure>
+          <header class="card__head">
+            <p class="card__kicker">Costa · Mediterráneo</p>
+            <h3 id="aguilas-title">Águilas</h3>
+            <p class="card__desc">Calas de agua transparente, castillo y el carnaval más colorido de la costa murciana.</p>
+          </header>
+          <footer class="card__body">
+            <p class="card__meta"><svg aria-hidden="true"><use href="#i-pin"/></svg> Región de Murcia · 2 min de lectura</p>
+            <input class="toggle visually-hidden" type="checkbox" id="guardar-aguilas">
+            <label class="btn" for="guardar-aguilas">
+              <svg aria-hidden="true"><use href="#i-bookmark"/></svg>
+              <span class="btn__off">Guardar en mi ruta</span>
+              <span class="btn__on">✓ Guardado</span>
+            </label>
+          </footer>
+        </article>
+
+        <article class="card" id="mazarron" data-municipio="mazarron" aria-labelledby="mazarron-title">
+          <figure class="card__media" tabindex="0" aria-label="Mazarrón: Gredas de Bolnuevo y playas">
+            <picture>
+              <source media="(width <= 600px)" srcset="assets/img/mazarron-mobile.jpg">
+              <img src="assets/img/mazarron-desktop.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Gredas de Bolnuevo, formaciones de arenisca junto al mar en Mazarrón">
+            </picture>
+            <span class="card__tag">Costa</span>
+            <figcaption class="overlay">
+              <p class="overlay__eyebrow">Costa · Bahía</p>
+              <p class="overlay__text">Costa mediterránea con las Gredas de Bolnuevo, erosiones de arenisca con formas de esculturas naturales, y playas casi vírgenes.</p>
+              <menu class="overlay__actions">
+                <li><button class="icon-btn like" type="button" aria-pressed="false" aria-label="Marcar Mazarrón como favorito" data-like="mazarron"><svg aria-hidden="true"><use href="#i-heart"/></svg></button></li>
+                <li><a class="icon-btn" href="https://www.mazarron.es" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Mazarrón (se abre en una pestaña nueva)"><svg aria-hidden="true"><use href="#i-link"/></svg></a></li>
+              </menu>
+            </figcaption>
+          </figure>
+          <header class="card__head">
+            <p class="card__kicker">Costa · Bahía</p>
+            <h3 id="mazarron-title">Mazarrón</h3>
+            <p class="card__desc">Las Gredas de Bolnuevo, playas tranquilas y una bahía perfecta para bajar el ritmo.</p>
+          </header>
+          <footer class="card__body">
+            <p class="card__meta"><svg aria-hidden="true"><use href="#i-pin"/></svg> Región de Murcia · 2 min de lectura</p>
+            <input class="toggle visually-hidden" type="checkbox" id="guardar-mazarron">
+            <label class="btn" for="guardar-mazarron">
+              <svg aria-hidden="true"><use href="#i-bookmark"/></svg>
+              <span class="btn__off">Guardar en mi ruta</span>
+              <span class="btn__on">✓ Guardado</span>
+            </label>
+          </footer>
+        </article>
+
+        <article class="card" id="cieza" data-municipio="cieza" aria-labelledby="cieza-title">
+          <figure class="card__media" tabindex="0" aria-label="Cieza: floración y valle del Segura">
+            <picture>
+              <source media="(width <= 600px)" srcset="assets/img/cieza-mobile.jpg">
+              <img src="assets/img/cieza-desktop.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Vista de Cieza desde la sierra de Ascoy">
+            </picture>
+            <span class="card__tag">Naturaleza</span>
+            <figcaption class="overlay">
+              <p class="overlay__eyebrow">Naturaleza · Vega Alta</p>
+              <p class="overlay__text">Cada primavera, miles de melocotoneros y albaricoqueros cubren de rosa y blanco el valle del Segura: la Floración de Cieza.</p>
+              <menu class="overlay__actions">
+                <li><button class="icon-btn like" type="button" aria-pressed="false" aria-label="Marcar Cieza como favorito" data-like="cieza"><svg aria-hidden="true"><use href="#i-heart"/></svg></button></li>
+                <li><a class="icon-btn" href="https://www.cieza.es" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Cieza (se abre en una pestaña nueva)"><svg aria-hidden="true"><use href="#i-link"/></svg></a></li>
+              </menu>
+            </figcaption>
+          </figure>
+          <header class="card__head">
+            <p class="card__kicker">Naturaleza · Vega Alta</p>
+            <h3 id="cieza-title">Cieza</h3>
+            <p class="card__desc">La floración más esperada del año y un valle que se tiñe de rosa y blanco cada primavera.</p>
+          </header>
+          <footer class="card__body">
+            <p class="card__meta"><svg aria-hidden="true"><use href="#i-pin"/></svg> Región de Murcia · 3 min de lectura</p>
+            <input class="toggle visually-hidden" type="checkbox" id="guardar-cieza">
+            <label class="btn" for="guardar-cieza">
+              <svg aria-hidden="true"><use href="#i-bookmark"/></svg>
+              <span class="btn__off">Guardar en mi ruta</span>
+              <span class="btn__on">✓ Guardado</span>
+            </label>
+          </footer>
+        </article>
+
+        <article class="card" id="jumilla" data-municipio="jumilla" aria-labelledby="jumilla-title">
+          <figure class="card__media" tabindex="0" aria-label="Jumilla: viñedos y vino Monastrell">
+            <picture>
+              <source media="(width <= 600px)" srcset="assets/img/jumilla-mobile.jpg">
+              <img src="assets/img/jumilla-desktop.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Plaza de Arriba de Jumilla">
+            </picture>
+            <span class="card__tag">Gastronomía</span>
+            <figcaption class="overlay">
+              <p class="overlay__eyebrow">Gastronomía · Altiplano</p>
+              <p class="overlay__text">Tierra de viñedos y bodegas con denominación de origen, famosa por su vino de Monastrell y su gastronomía de interior.</p>
+              <menu class="overlay__actions">
+                <li><button class="icon-btn like" type="button" aria-pressed="false" aria-label="Marcar Jumilla como favorito" data-like="jumilla"><svg aria-hidden="true"><use href="#i-heart"/></svg></button></li>
+                <li><a class="icon-btn" href="https://www.jumilla.org" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Jumilla (se abre en una pestaña nueva)"><svg aria-hidden="true"><use href="#i-link"/></svg></a></li>
+              </menu>
+            </figcaption>
+          </figure>
+          <header class="card__head">
+            <p class="card__kicker">Gastronomía · Altiplano</p>
+            <h3 id="jumilla-title">Jumilla</h3>
+            <p class="card__desc">Viñedos, bodegas y el Monastrell que ha puesto el Altiplano murciano en el mapa del vino.</p>
+          </header>
+          <footer class="card__body">
+            <p class="card__meta"><svg aria-hidden="true"><use href="#i-pin"/></svg> Región de Murcia · 3 min de lectura</p>
+            <input class="toggle visually-hidden" type="checkbox" id="guardar-jumilla">
+            <label class="btn" for="guardar-jumilla">
+              <svg aria-hidden="true"><use href="#i-bookmark"/></svg>
+              <span class="btn__off">Guardar en mi ruta</span>
+              <span class="btn__on">✓ Guardado</span>
+            </label>
+          </footer>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <p class="footer-brand">Murcia<span>Gram</span></p>
+    <p class="footer__lead">Una galería para descubrir, guardar y compartir lo mejor de la Región de Murcia.</p>
+    <nav aria-label="Enlaces del pie">
+      <ul>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#municipios">Municipios</a></li>
+        <li><a href="mailto:turismo@murciagram.es">Contacto</a></li>
+      </ul>
+    </nav>
+    <p class="footer__meta">© 2026 MurciaGram · Proyecto académico para la Consejería de Turismo de la Región de Murcia.</p>
+    <a class="to-top" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>
