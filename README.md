@@ -1,50 +1,112 @@
-# MurciaGram · El Pinterest de la Región de Murcia
+<img src="assets/banner.svg" alt="MurciaGram · El Pinterest de la Región de Murcia" width="100%">
 
-Galería de inspiración visual (HTML5 + CSS3, sin JavaScript) para promocionar el patrimonio histórico, natural, cultural y gastronómico de los municipios de la Región de Murcia. Práctica obligatoria de CSS3.
+# MurciaGram
 
-🔗 **Demo:** `https://TU-USUARIO.github.io/murciagram/` _(sustituye `TU-USUARIO` por tu usuario de GitHub antes de publicar)._
+**Descubre la Región de Murcia, un municipio a la vez.**
 
-![Vista del proyecto](assets/img/lorca-desktop.jpg)
+Una galería visual, libre y sencilla, para conocer ocho lugares de la Región de Murcia a través de sus fotografías, su historia y su gastronomía.
 
-## Qué incluye
+<p align="center">
+  <a href="https://sandraberna06.github.io/Murciagram/">
+    <img src="https://img.shields.io/badge/Abrir_MurciaGram-ver_la_web-0f5f5c?style=for-the-badge&logo=githubpages&logoColor=white" alt="Abrir MurciaGram">
+  </a>
+</p>
 
-- **Diseño editorial y responsive** con paleta mediterránea (terracota, verde profundo y dorado), cabecera sticky con efecto glass, hero con imagen destacada y tarjetas tipo Pinterest.
-- **HTML5 semántico:** `header`, `nav`, `aside`, `main`, `footer`, `section`, `article`, `figure`, `figcaption` y `menu`. No hay `div` genéricos.
-- **SEO:** viewport, `robots` index/follow, descripción, canonical, Open Graph, Twitter Cards y datos estructurados JSON-LD.
-- **Mobile-first puro:** el CSS base define el móvil (< 600 px) en una columna Flexbox.
-  - Tableta `(width >= 600px) and (width <= 800px)`: Flexbox multidireccional de 2 columnas.
-  - Escritorio `(width > 800px)`: CSS Grid (cabecera, aside fijo de 260 px, galería Flexbox fluida y pie).
-  - Solo se usa la sintaxis de rangos; no hay `min-width` ni `max-width` en las media queries.
-- **`@media print`:** oculta el menú lateral y los botones de interacción, fuerza fondo blanco y optimiza la tipografía para papel.
-- **Tarjetas:** borde sutil, esquinas redondeadas, sombras difuminadas y transiciones con curvas `cubic-bezier` personalizadas.
-- **Efecto permanente:** el botón "Guardar en mi ruta" es un `label` de un checkbox; al marcarlo, `:checked` + `:has()` cambian por completo el color de la tarjeta y muestran una insignia.
-- **Overlay estilo Pinterest:** al hacer hover o foco, la imagen se oscurece, aparece la descripción, el icono de "Me gusta" y el enlace a la web oficial del municipio.
-- **Imágenes adaptables:** cada tarjeta usa `<picture>` con una versión móvil de 400 × 300 px y una de escritorio de 1000 × 750 px. Las imágenes fuera del primer viewport usan `loading="lazy"`; el hero usa `fetchpriority="high"`.
-- **Accesibilidad:** foco visible, `aria-label`, `aria-pressed`, texto alternativo, `prefers-reduced-motion` y navegación por teclado.
+> **Enlace directo:** **https://sandraberna06.github.io/Murciagram/**
+> No hace falta instalar nada: se abre en el navegador del móvil, la tablet o el ordenador.
 
-## Estructura
+---
 
-```text
-murciagram/
-├─ index.html
-├─ styles.css
-├─ README.md
-├─ .vscode/
-│  └─ tasks.json
-├─ scripts/
-│  ├─ optimize-images.ps1
-│  └─ optimize-images.sh
-└─ assets/
-   ├─ favicon.svg
-   ├─ raw/          ← fotos originales
-   └─ img/          ← versiones -mobile.jpg y -desktop.jpg
-```
+## ¿Qué es MurciaGram?
 
-## Imágenes y licencias
+MurciaGram es una **galería de inspiración visual** inspirada en Pinterest. Reúne en una sola página ocho municipios de la Región de Murcia y muestra, para cada uno, una fotografía, una descripción breve y un enlace a su web oficial.
 
-Las fotografías proceden de Wikimedia Commons y se han recortado a 4:3 para las tarjetas:
+Nació como un **proyecto académico de HTML5 y CSS3**, pero está pensado para que cualquiera pueda consultarlo: turistas, estudiantes, vecinos o curiosos que quieran hacerse una idea rápida de lo que ofrece la región.
 
-| Municipio | Archivo original | Autoría | Licencia |
+No hay cuentas, no hay anuncios y no se recogen datos. Es una web estática: solo HTML y CSS.
+
+---
+
+## Qué puedes hacer
+
+- **Explorar los ocho municipios** en una galería de tarjetas.
+- **Pasar el ratón o tocar una tarjeta** para ver su descripción, el botón de *me gusta* y el acceso a la web oficial del ayuntamiento.
+- **Guardar tu ruta:** pulsa “Guardar en mi ruta” y la tarjeta cambia de color para que la recuerdes.
+- **Consultar desde cualquier dispositivo:** móvil, tablet u ordenador, con un diseño que se adapta.
+- **Imprimir la página** y llevarte una versión limpia en papel, sin menús ni botones.
+
+> Los botones de *me gusta* y de guardar son **visuales**: funcionan con CSS, sin JavaScript, y no se guardan al cerrar la página. La idea es que sirvan de base para una futura versión interactiva.
+
+---
+
+## Los ocho municipios
+
+| Municipio | Categoría | Qué no te puedes perder |
+| --- | --- | --- |
+| **Lorca** | Cultura · Interior | La Fortaleza del Sol y su Semana Santa |
+| **Cartagena** | Cultura · Costa | El teatro romano y el puerto milenario |
+| **Caravaca de la Cruz** | Cultura · Noroeste | El Real Alcázar-Santuario y los Caballos del Vino |
+| **Murcia** | Gastronomía · Huerta | La Catedral y la huerta murciana |
+| **Águilas** | Costa · Mediterráneo | Sus calas turquesa y el carnaval |
+| **Mazarrón** | Costa · Bahía | Las Gredas de Bolnuevo y sus playas |
+| **Cieza** | Naturaleza · Vega Alta | La floración del valle del Segura |
+| **Jumilla** | Gastronomía · Altiplano | Sus viñedos y el vino Monastrell |
+
+---
+
+## Cómo navegar
+
+| Dispositivo | Qué encontrarás |
+| --- | --- |
+| **Móvil** | Una columna de tarjetas a pantalla completa y un menú de municipios al principio. |
+| **Tablet** | Dos columnas para comparar destinos de un vistazo. |
+| **Ordenador** | Una barra lateral fija con los municipios y una galería fluida a la derecha. |
+
+Consejos rápidos:
+
+1. Entra en **https://sandraberna06.github.io/Murciagram/**.
+2. Desplázate por la galería o usa los enlaces de municipios.
+3. Pasa el ratón por una foto (o tócala en el móvil) para leer su descripción.
+4. Pulsa el corazón si quieres marcarla y el enlace para visitar la web oficial.
+
+También puedes recorrer toda la página **solo con el teclado**: la tecla `Tab` va resaltando cada enlace y botón con un contorno dorado.
+
+---
+
+## Accesibilidad
+
+El proyecto cuida detalles que facilitan el uso a todo el mundo:
+
+- Textos alternativos descriptivos en todas las fotografías.
+- Contraste de color revisado para cumplir **WCAG AA**.
+- Foco visible y navegación completa por teclado.
+- Respeto por la opción del sistema **“reducir movimiento”**.
+- Versión de impresión sin elementos decorativos.
+
+> El zoom del navegador está desactivado porque así lo pedía el enunciado académico. En una web real se recomendaría permitirlo.
+
+---
+
+## Un proyecto académico
+
+MurciaGram se ha construido sin frameworks y sin JavaScript de interacción, con estos ingredientes:
+
+- **HTML5 semántico**: `header`, `nav`, `main`, `aside`, `footer`, `article`, `figure` y `figcaption`, sin `div` de maquetación.
+- **CSS3 moderno**: Flexbox, CSS Grid, variables, `:has()`, `:checked`, transiciones con `cubic-bezier` y media queries con sintaxis de rangos.
+- **Diseño mobile-first**: la versión móvil es la base; tablet y escritorio se añaden con mejoras progresivas.
+- **Imágenes responsive** con `<picture>`, versiones de 400 px y 1000 px, y carga diferida.
+- **Estilos de impresión** para obtener una página limpia en papel.
+- **ImageMagick** para recortar y optimizar las fotografías, con una tarea automatizada en VS Code.
+
+Si te interesa el detalle técnico —estructura del CSS, breakpoints, flujo de imágenes o despliegue— consulta **[DOCUMENTACION.md](DOCUMENTACION.md)**.
+
+---
+
+## Créditos de las imágenes
+
+Las fotografías proceden de **Wikimedia Commons** y se han recortado y optimizado para el proyecto. Cada imagen conserva su licencia original.
+
+| Municipio | Fotografía original | Autoría | Licencia |
 | --- | --- | --- | --- |
 | Lorca | [Fortaleza del Sol (Lorca)](<https://commons.wikimedia.org/wiki/File:Lorca_-_2011-12-17_Fortaleza_del_Sol_(Lorca)_001.jpg>) | Luiyo | CC BY-SA 2.0 |
 | Cartagena | [Teatro romano de Cartagena](https://commons.wikimedia.org/wiki/File:Teatro_romano_de_Cartagena,_Espa%C3%B1a,_2022-07-16,_DD_02.jpg) | Diego Delso | CC BY-SA 4.0 |
@@ -55,91 +117,37 @@ Las fotografías proceden de Wikimedia Commons y se han recortado a 4:3 para las
 | Cieza | [Cieza desde la Sierra de Ascoy](https://commons.wikimedia.org/wiki/File:Cieza_desde_la_Sierra_de_Ascoy.jpg) | Ramón Cutanda López | CC BY 2.0 |
 | Jumilla | [Plaza de Arriba de Jumilla](https://commons.wikimedia.org/wiki/File:Jumilla._Plaza_de_Arriba.JPG) | Enrique Íñiguez Rodríguez (Qoan) | CC BY-SA 3.0 |
 
-> Para cambiar una foto, sustituye el archivo en `assets/raw/` manteniendo el nombre (por ejemplo, `lorca.jpg`) y ejecuta la tarea de optimización.
+Si reutilizas una fotografía, conserva la atribución y la licencia indicadas.
 
-## Preparación de las imágenes con ImageMagick
+---
 
-Las fotos originales viven en `assets/raw/`. Cada una genera dos variantes en `assets/img/`:
+## Ver el proyecto en local
 
-```bash
-magick assets/raw/lorca.jpg -auto-orient -resize '400x300^' -gravity center -extent 400x300 -strip -quality 82 assets/img/lorca-mobile.jpg
-magick assets/raw/lorca.jpg -auto-orient -resize '1000x750^' -gravity center -extent 1000x750 -strip -quality 85 assets/img/lorca-desktop.jpg
-```
-
-Instalación de ImageMagick en Windows:
-
-```powershell
-winget install --id ImageMagick.ImageMagick
-```
-
-En macOS: `brew install imagemagick`. En Debian/Ubuntu: `sudo apt install imagemagick`.
-
-### Automatización en VS Code
-
-`.vscode/tasks.json` define la tarea **"Optimizar imágenes (ImageMagick)"**, que recorre `assets/raw/*` y exporta en bloque las dos versiones a `assets/img/`.
-
-1. Abre la carpeta del proyecto en VS Code.
-2. Pulsa `Ctrl + Shift + B` (o *Terminal → Ejecutar tarea…*).
-3. La tarea detecta `magick` en el PATH; si no lo encuentra, busca la instalación en `Program Files`/`LocalAppData` y, en Linux/macOS, usa `convert` (ImageMagick 6) como alternativa.
-
-La lógica está en `scripts/optimize-images.ps1` (Windows) y `scripts/optimize-images.sh` (Linux/macOS). Se puede ejecutar también desde terminal:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/optimize-images.ps1
-```
+No es necesario para consultar la web, pero si quieres abrirlo en tu ordenador:
 
 ```bash
-bash scripts/optimize-images.sh
+git clone https://github.com/sandraberna06/Murciagram.git
+cd Murciagram
 ```
 
-## Preparado para la fase JavaScript
+Después, en VS Code, abre la carpeta y usa **Live Server** sobre `index.html`. También puedes ejecutar:
 
-- Cada tarjeta tiene `data-municipio` y un botón `.like[data-like]` con `aria-pressed`.
-- `.like[aria-pressed="true"]` ya rellena el corazón.
-- `.card.is-liked { order: -1 }` hará que la tarjeta suba al principio de la galería Flexbox.
-- La tarjeta guardada ya cambia de estado visual con `:has(.toggle:checked)`, sin necesidad de JavaScript.
+```bash
+npx serve .
+```
 
-## Despliegue en GitHub Pages
+---
 
-1. Crea un repositorio público llamado `murciagram`.
-2. Sube el proyecto:
+## Licencia
 
-   ```bash
-   git init
-   git add .
-   git commit -m "MurciaGram: galería visual de la Región de Murcia"
-   git branch -M main
-   git remote add origin https://github.com/TU-USUARIO/murciagram.git
-   git push -u origin main
-   ```
+- **Código** (`index.html`, `styles.css`, scripts): proyecto académico; puede reutilizarse con fines educativos citando la autoría.
+- **Fotografías**: cada una mantiene su licencia de Wikimedia Commons (CC BY o CC BY-SA, según la tabla).
+- **Tipografías**: fuentes del sistema, sin archivos externos.
 
-3. En GitHub: *Settings → Pages → Deploy from a branch → `main` / root*.
-4. Sustituye `TU-USUARIO` en `index.html` (canonical, Open Graph, JSON-LD) y en este README por tu usuario real.
+---
 
-## Checklist del enunciado
-
-| Requisito | Estado |
-| --- | --- |
-| HTML5 semántico sin contenedores genéricos | ✅ |
-| `viewport` con escala correcta y zoom controlado | ✅ |
-| `robots` index/follow, descripción y Open Graph | ✅ |
-| CSS base = móvil (< 600 px), una columna Flexbox | ✅ |
-| Sintaxis de rangos `>=` / `<=`, sin `min-width` ni `max-width` | ✅ |
-| Tableta 600–800 px con 2 columnas | ✅ |
-| Escritorio > 800 px con CSS Grid y galería Flexbox | ✅ |
-| `@media print` con fondo blanco y sin menú/botones | ✅ |
-| Tarjetas con borde, `border-radius` y `box-shadow` | ✅ |
-| Hover/foco con `transform` y `cubic-bezier` | ✅ |
-| Efecto permanente con selectores de estado | ✅ |
-| Overlay Pinterest con texto, "Me gusta" y enlace externo | ✅ |
-| `<picture>` con versión móvil y de escritorio | ✅ |
-| `loading="lazy"` en imágenes fuera del viewport | ✅ |
-| ImageMagick + variantes de imagen | ✅ |
-| Automatización en VS Code | ✅ (+1 punto) |
-| Preparación para la fase JavaScript | ✅ |
-| README documentado | ✅ |
-| Repositorio público y despliegue online | ⏳ Pendiente de publicar con tu cuenta de GitHub |
-
-## Nota sobre accesibilidad
-
-El enunciado pide inhabilitar el zoom (`maximum-scale=1.0, user-scalable=no`). Se ha implementado así de forma intencionada para cumplir la práctica, aunque en un proyecto real de accesibilidad se recomendaría permitir el zoom del usuario.
+<p align="center">
+  Proyecto de <a href="https://github.com/sandraberna06">@sandraberna06</a> · Región de Murcia · 2026
+  <br>
+  <a href="https://sandraberna06.github.io/Murciagram/">sandraberna06.github.io/Murciagram</a>
+</p>
