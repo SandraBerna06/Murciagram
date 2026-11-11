@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-label="MurciaGram · El Pinterest de la Región de Murcia">
+  <title>MurciaGram · El Pinterest de la Región de Murcia</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a4643"/>
+      <stop offset=".55" stop-color="#0f5f5c"/>
+      <stop offset="1" stop-color="#1b7a72"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#e7a92f" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#e7a92f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <circle cx="1020" cy="70" r="250" fill="url(#sun)"/>
+  <circle cx="1090" cy="330" r="165" fill="none" stroke="#ffffff" stroke-opacity=".14" stroke-width="1.5"/>
+  <circle cx="70" cy="360" r="130" fill="none" stroke="#ffffff" stroke-opacity=".1" stroke-width="1.5"/>
+
+  <g transform="translate(895 118) scale(4.6)" fill="none" stroke="#ffffff" stroke-opacity=".85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/>
+    <circle cx="12" cy="10" r="2.5"/>
+  </g>
+
+  <text x="80" y="180" font-family="Georgia, 'Times New Roman', serif" font-size="88" font-weight="700" fill="#ffffff" letter-spacing="-3">Murcia<tspan fill="#e7a92f" font-style="italic">Gram</tspan></text>
+  <text x="84" y="236" font-family="'Segoe UI', Arial, sans-serif" font-size="27" fill="#ffffff" fill-opacity=".86">El Pinterest de la Región de Murcia</text>
+  <text x="84" y="306" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3.5" fill="#e7a92f">HTML5 · CSS3 · RESPONSIVE · SIN JAVASCRIPT</text>
+  <text x="84" y="344" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#ffffff" fill-opacity=".62">Ocho municipios · Patrimonio, costa, naturaleza y gastronomía</text>
+</svg>
